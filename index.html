@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>Maps Project</title>
+
+    <!-- /MAPS -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container content-center" id="contenedor">
+        <h2>¿Qué tiempo hace?</h2>
+        <p id="encabezado">Introduce el nombre de una ciudad</p>
+        
+            <div class="row justify-content-center">
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" placeholder="Ej. Londres, Tokio" name="ciudad" id="ciudad">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-3">
+                    <button class="btn btn-primary" id="botonEnviar">Enviar</button>
+                </div>
+            </div>
+        
+        <div id="previsionTiempo">
+            
+        </div>
+
+        <!-- MAPA INCRUSTADO -->
+        <div id="map" class="map"></div>
+
+        <!-- Google Maps API -->
+        <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAipD-WQ-403bPd4_dx0YQ7oHnvV17zNh8&callback=initMap&v=weekly"
+        defer
+      ></script>
+        <!-- Script -->
+        <script src="js/index.js"></script>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+            integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+            crossorigin="anonymous"></script>
+
+    </div>
+</body>
+
+</html>
